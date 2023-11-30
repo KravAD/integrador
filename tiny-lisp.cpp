@@ -6,7 +6,7 @@ using namespace std;
 void load_script (const char* filename, bool show_script = false) {
 
     ifstream file(filename);
-    if (!file.is.open()) {
+    if (!file.is_open()) {
         cerr << "Error: No se pudo abrir el archivo " << filename << endl;
         return;
     }
@@ -32,4 +32,6 @@ void load_script() {
 int main() {
     load_script("7enanitos.txt", true);
     load_script();
+
+    return 0;
 }
