@@ -12,3 +12,5 @@ void load_script (const char* filename, bool show_script = false) {
     }
 
 }
+
+string script_content((istreambuf_iterator<char>(file)), istreambuf_iterator<char>());
