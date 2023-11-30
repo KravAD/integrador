@@ -25,4 +25,6 @@ void load_script() {
     string filename;
     cout << "Pon el nombre del archivo: " << endl;
     cin >> filename;
+
+    load_script (filename.c_str());
 }
