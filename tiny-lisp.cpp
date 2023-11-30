@@ -11,6 +11,13 @@ void load_script (const char* filename, bool show_script = false) {
         return;
     }
 
+    string script_content((istreambuf_iterator<char>(file)), istreambuf_iterator<char>());
+
+    if(show_script) {
+        cout << " Contenido del archivo: \n" << script_content << endl;
+    } else{
+        cout << "Script cargado:\n" << script_content << "\n";
+    }
+
 }
 
-string script_content((istreambuf_iterator<char>(file)), istreambuf_iterator<char>());
