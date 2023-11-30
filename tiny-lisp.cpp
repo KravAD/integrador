@@ -30,5 +30,5 @@ void load_script() {
 }
 
 int main() {
-    
+    load_script("7enanitos.txt", true);
 }
